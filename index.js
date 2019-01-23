@@ -19,7 +19,7 @@ fluence.createAppSession(contractAddress, appId).then((s) => {
 		fluenceSession = s;
 });
 
-// gets result and logs it
+// gets a result and logs it
 window.logResultAsString = function (request) {
 	request.result().then((r) => console.log(r.asString()))
 };
